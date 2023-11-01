@@ -3,7 +3,7 @@ window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'add_to_cart',  			// name of the event. In this case, it always must be add_to_cart
   ecommerce: {
-    currency: "USD",
+    currency: 'EUR',
     value: 7.77,                                // order total (price of all products + shipping). If you want, it can be only price of all products
     items: [{					// an array with a product (or multiple products) that was added to a cart
       item_name: 'Product 1', 			// insert an actual product name
