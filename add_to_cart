@@ -2,11 +2,13 @@
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'add_to_cart',  			// name of the event. In this case, it always must be add_to_cart
-  ecommerce: {							
-    items: [{							// an array with a product (or multiple products) that was added to a cart
+  ecommerce: {
+    currency: "USD",
+    value: 7.77,                                // order total (price of all products + shipping). If you want, it can be only price of all products
+    items: [{					// an array with a product (or multiple products) that was added to a cart
       item_name: 'Product 1', 			// insert an actual product name
-      item_id: 'product1',				// insert an actual product ID
-      price: '11.99',					// insert an actual product price. Number or a string. Don't include currency code
+      item_id: 'product1',			// insert an actual product ID
+      price: '11.99',				// insert an actual product price. Number or a string. Don't include currency code
       item_brand: 'brand A',			// insert an actual product price
       item_category: 'Apparel',			// insert an actual product top-level category
 	  item_category2: 'T-shirt',		// if it is possible to drill down the categories (e.g. Apparel, then T-shirt, then Men), use item_category2, item_category3, etc. Can use from item_category up to item_category5
